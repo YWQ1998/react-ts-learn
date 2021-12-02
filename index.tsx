@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
-import { Geet } from './compoments/Geet';
+import { Geet } from './compoments/FunctionComponent';
+// import { WelCome } from './compoments/props/baseFunction';
+import WelCome from './compoments/ClassComponent';
 interface AppProps {}
 interface AppState {
   name: string;
@@ -19,9 +20,8 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
         <Geet />
-        <p>你好！</p>
+        <WelCome name="张三" />
       </div>
     );
   }
