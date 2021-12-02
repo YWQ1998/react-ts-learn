@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
-
+import { Geet } from './compoments/Geet';
 interface AppProps {}
 interface AppState {
   name: string;
@@ -20,6 +20,7 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
+        <Geet />
         <p>你好！</p>
       </div>
     );
