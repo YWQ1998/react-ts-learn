@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
-import { Geet } from './compoments/FunctionComponent';
+// import { Geet } from './compoments/FunctionComponent';
 // import { WelCome } from './compoments/props/baseFunction';
-import WelCome from './compoments/ClassComponent';
+// import WelCome from './compoments/ClassComponent';
 // import FunctionClick from './compoments/funComponent/FunctionClick';
 // import ClassClick from './compoments/ClassComponent/ClassClick';
-import StateFunction from './compoments/state/baseFunction';
+// import StateFunction from './compoments/state/baseFunction';
+// import ThisEvent from './compoments/ClassComponent/01_thisEvent';
+import FatherComponent from './compoments/propsTransfre/fatherComponent';
 interface AppProps {}
 interface AppState {
   name: string;
@@ -23,10 +25,12 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Geet />
-        <WelCome name="张三" />
+        {/* <Geet /> */}
+        {/* <WelCome name="张三" /> */}
         {/* <ClassClick /> */}
-        <StateFunction />
+        {/* <StateFunction /> */}
+        {/* <ThisEvent /> */}
+        <FatherComponent />
       </div>
     );
   }
