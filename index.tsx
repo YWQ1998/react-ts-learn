@@ -5,7 +5,8 @@ import { Geet } from './compoments/FunctionComponent';
 // import { WelCome } from './compoments/props/baseFunction';
 import WelCome from './compoments/ClassComponent';
 // import FunctionClick from './compoments/funComponent/FunctionClick';
-import ClassClick from './compoments/ClassComponent/ClassClick';
+// import ClassClick from './compoments/ClassComponent/ClassClick';
+import StateFunction from './compoments/state/baseFunction';
 interface AppProps {}
 interface AppState {
   name: string;
@@ -24,7 +25,8 @@ class App extends Component<AppProps, AppState> {
       <div>
         <Geet />
         <WelCome name="张三" />
-        <ClassClick />
+        {/* <ClassClick /> */}
+        <StateFunction />
       </div>
     );
   }
